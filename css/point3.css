@@ -1,0 +1,205 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+#nav ul li:nth-of-type(3) a{
+	color:red;
+	border-bottom:1px solid red;
+}
+#login{	
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 150px;
+	overflow: hidden;
+}
+#login .left{
+	width: 200px;
+	height: 210px;
+	margin:20px 15px;
+	float: left;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+#login .left h3{
+	width: 170px;
+	height: 30px;
+	background:#ff5f19;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 80px 15px 30px;
+	box-shadow: 2px 6px 15px 2px rgba(255,95,25,0.6);
+}
+#login .left h3 a{
+	display: block;
+	color: #fff;
+}
+#login .left p{
+	width: 200px;
+	text-align: center;
+	color: #CCC;
+}
+#login .left p span{
+	color: orangered;
+}
+#login .right{
+	overflow: hidden;
+	margin: 20px 10px;
+	position: relative;
+	width: 747px;
+}
+#login .right ul{
+	position: relative;
+	width: 2988px;
+}
+#login .right ul li{
+	float: left;
+}
+#login .right ul li:nth-of-type(1){
+}
+#login .right span{
+	width: 40px;
+	height: 70px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	cursor: pointer;
+}
+#login .right span:nth-of-type(1){
+	background: url(../images/sprite.png) no-repeat -235px -1866px;
+	left: 50px;	
+}
+#login .right span:nth-of-type(2){
+	background: url(../images/sprite.png) no-repeat -235px -1933px;
+	right: 50px;
+}
+#user{
+	width: 1000px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+#user .top p{
+	background: url(../images/sprite1.png) no-repeat -250px -2104px;
+	padding-left: 30px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+#user .top p span{
+	font-size: 24px;
+	box-shadow: 0px -5px 0px 0px rgba(6,6,6,0.1) inset;
+}
+#user .center{
+	overflow: hidden;
+	position: relative;
+	height: 280px;
+	margin-bottom: 30px;
+}
+#user .center ul li{
+	float: left;
+	width: 200px;
+	height: 200px;
+	border: 3px solid #999;
+	border-radius: 50%;
+	margin: 10px 60px;
+	text-align: center;
+	line-height: 200px;
+	position: relative;
+}
+#user .center ul li span{
+	font-size: 42px;
+	font-weight: 600;
+}
+#user .center ul li a{
+	width: 20px;
+	height: 20px;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../images/sprite1.png) no-repeat -250px -2136px;
+}
+#user .center ol{
+	position: absolute;
+	bottom: -80px;
+}
+#user .center ol li{
+	float: left;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	margin: 10px 60px;
+	text-align: center;
+	background: #fff;
+	color: #666;
+}
+#view{
+	width: 1000px;
+	margin: 0 auto;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+	overflow: hidden;
+	padding-bottom: 70px;
+	margin-bottom: 30px;
+}
+#view .top{
+	overflow: hidden;
+	margin-top: 20px;
+}
+#view .top p{
+	padding-left: 30px;
+	background: url(../images/sprite1.png) no-repeat -246px -2165px;
+	height: 55px;
+	margin-top: -14px;
+	margin-bottom: 20px;
+}
+#view .top p span{
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	padding: 15px 0;
+	margin: 0 10px;
+}
+#view .top p a:nth-of-type(1){
+	border-bottom: 3px solid deepskyblue;
+	color: #00BFFF;
+}
+#view .top p a{
+	display: inline-block;
+	color: #333;
+}
+#view .bottom{
+	width: 800px;
+	margin: 50px auto;
+	margin-top: 120px;
+	position: relative;
+}
+#view .bottom ul{
+	position: absolute;
+	bottom: 40px;
+}
+#view .bottom ul li{
+	width: 5px;
+	height: 5px;
+	background: deepskyblue;
+	border-radius: 50%;
+	float: left;
+	margin: 0 36px;
+	
+}
+#view .bottom ol{
+	position: absolute;
+	background: #fff;
+	z-index: 2;
+	bottom: 21px;
+}
+#view .bottom ol li{
+	float: left;
+	padding: 0 21px;
+	border-top: 1px solid #999999;
+}
+#view .bottom ol li:nth-of-type(1){
+	padding-left: 0;
+	padding-right:10px 
+}

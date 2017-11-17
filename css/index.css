@@ -1,0 +1,442 @@
+/*
+* @Author: yang
+* @Date:   2017-08-07 09:55:17
+* @Last Modified by:   yang
+* @Last Modified time: 2017-08-08 15:45:21
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+html,body,section{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: hidden;
+	position:relative;
+}
+.side{
+	position: fixed;
+	top:50%;
+	right: 20px;
+	margin-top: -164px;
+	z-index:2;
+}
+.side li{
+	width:25px;
+	height:25px;
+	border: 1px solid red;
+	border-radius: 50%;
+	margin-top:20px;
+	cursor:pointer;
+
+}
+.side .current{
+	background:url(../images/side_bg.png) center;
+	background-size:90% ;
+	width:45px;
+	height: 45px;
+	border:none;
+	margin-left: -10px;
+	animation:circle 3s linear infinite;
+}
+@keyframes circle{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+.music{
+	position:fixed;
+	top: 30px;
+	right:30px;
+	z-index:2;
+}
+.play{
+	animation:circle 2s linear infinite;
+}
+.logo{
+	position:absolute;
+	top: 30px;
+	left:30px;
+	z-index:2;
+}
+.download{
+	width:300px;
+	height:150px;
+	position:absolute;
+	z-index:2;
+	color:#fff;
+	left:50%;
+	margin-left:-153px;
+	bottom:50px;
+}
+.download span{
+	border-right: 1px solid #fff;
+	padding-right: 20px;
+	padding-left: 10px;
+}
+.download p{
+	padding-left:10px;
+}
+.footer{
+	width:100%;
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	z-index:2;
+	bottom:0;
+	height:70px;
+}
+.footer ul{
+	width:720px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.footer ul li{
+	float: left;
+	line-height:70px;
+	text-align:center;
+	width:140px;
+}
+.footer ul li a{
+	color:#999;
+	display:block;
+}
+.footer ul li a:hover{
+	background: red;
+	transition:2s;	
+}
+section{
+	position:relative;
+	top:0;
+	left: 0;
+}
+section>div{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.title{
+	width:100%;
+	height: 100px;
+	position:absolute;
+	left:0;
+	bottom: 200px;
+	text-align: center;
+}
+.title span{
+	background: url(../images/logo-text.png) no-repeat left center;
+	display: inline-block;/* 既有块元素特点，也有内联元素特点 */
+	width:120px;
+	height:45px;
+	transition:1s;
+}
+.title>img{
+	transition:1s;
+}
+.title p{
+	width:400px;
+	margin:0 auto;
+	color: #fff;
+	font-size: 12px;
+	transition:1s;
+}
+.no>img{
+	margin-left:-1000px;
+	transform:rotate(180deg);
+}
+.no p{
+	transform:scale(0.2);
+	opacity:0.1
+}
+.screen1{
+	background: url(../images/bg01.jpg);
+	background-size: 100% 100%;
+}
+.screen1 .slider{
+	position: relative;
+}
+.screen1 .slider .bag1{
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -120px;
+	animation: play1 10s linear infinite;
+}
+@keyframes play1{
+	0%{
+		transform: translate(0,0);
+	}
+	50%{
+		transform: translate(0,-100px);
+	}
+	100%{
+		transform: translate(0,0);
+	}
+}
+.screen1 .slider .bag2{
+	animation: play2 25s linear infinite;
+}
+.screen1 .slider .bag3{
+	animation: play2 65s linear infinite;
+	position: absolute;
+	bottom: 0px;
+	left: -300px;
+}
+@keyframes play2{
+	0%{
+		transform: translate(-100%,0);
+	}
+	100%{
+		transform: translate(1800px,0);
+	}
+}
+.screen2{
+	background: url(../images/bg02.jpg);
+	background-size: 100% 100%;
+}
+.screen2 .slider2{
+	
+}
+.screen2 .slider2 .bag1{
+	position: absolute;
+	top: 180px;
+	left: 50%;
+	margin-left: -120px;
+}
+.screen2 .slider2 .bag2{
+	position: absolute;
+	top: 218px;
+	left: 50%;
+	margin-left: -81px;
+	animation: circle 3s linear infinite;
+}
+.screen2 .slider2 .bag3{
+	position: absolute;
+	top: 158px;
+	right: 200px;
+	margin-left: -81px;
+	animation: play1 9s linear infinite;
+}
+.screen3{
+	background: url(../images/bg03.jpg);
+	background-size: 100% 100%;
+}
+.screen3 .slider3 img{
+	position: absolute;
+}
+.screen3 .slider3 .bag1{
+	top: 180px;
+	left: 50%;
+	margin-left: -120px;
+	animation: play1 25s linear infinite;
+}
+.screen3 .slider3 .bag2{
+	top: 380px;
+	left: 50%;
+	margin-left: -120px;
+	animation: play3 6s linear infinite;
+}
+.screen3 .slider3 .bag3{
+	top: 380px;
+	left: 50%;
+	animation: play3 8s linear infinite;
+}
+.screen3 .slider3 .bag4{
+	top: 380px;
+	left: 50%;
+	margin-left: -80px;
+	animation: play3 7s linear infinite;
+}
+.screen3 .slider3 .bag5{
+	top: 380px;
+	left: 50%;
+	margin-left: -60px;
+	animation: play3 10s linear infinite;
+}
+.screen3 .slider3 .bag6{
+	top: 380px;
+	left: 50%;
+	margin-left: -40px;
+	animation: play3 9s linear infinite;
+}
+.screen3 .slider3 .bag7{
+	top: 380px;
+	left: 50%;
+	margin-left: -20px;
+	animation: play3 11s linear infinite;
+}
+@keyframes play3{
+	0%{
+		transform: translate(0,0);
+	}
+	100%{
+		transform: translate(0,-400px);
+	}
+}
+.screen4{
+	background: url(../images/bg04.jpg);
+	background-size: 100% 100%;
+}
+.screen4 .slider4 .bag1{
+	position: absolute;
+	top: 120px;
+	left: 50%;
+	margin-left: -120px;
+}
+.screen4 .slider4:hover{
+	animation: play4 3s linear infinite;
+}
+@keyframes play4{
+	0%{
+		transform: translate(0,0);
+	}
+	30%{
+		transform: translate(-600px,-80px);
+	}
+	80%{
+		transform: translate(200px,-70px);
+	}
+	100%{
+		transform: translate(0,0);
+	}
+}
+.screen5{
+	background: url(../images/bg05.jpg);
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.screen5 .slider5 .bag1{
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	margin-left: -120px;
+	animation: play5 2s linear infinite;
+}
+.screen5 .slider5 .bag2{
+	position: absolute;
+	top: 300px;
+	left: 80%;
+	margin-left: -120px;
+	animation: play1 20s linear infinite;
+}
+.screen5 .slider5 .bag3{
+	position: absolute;
+	top: 500px;
+	left: 90%;
+	margin-left: -120px;
+	animation: play1 25s linear infinite;
+}
+@keyframes play5{
+	0%{
+		transform: scale(0)
+	}
+	100%{
+		transform: scale(3)
+	}
+}
+.screen6{
+	background: url(../images/bg06.jpg);
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+}
+.screen6 .bag1{
+	position: absolute;
+	animation: play6 30s linear infinite;
+	top: -10%;
+}
+.screen6 .bag2{
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	margin-left: -120px;
+	animation: play1 20s linear infinite;
+}
+@keyframes play6{
+	0%{
+		transform: translate(0,-100%)
+	}
+	100%{
+		transform: translate(0,0)
+	}
+}
+.screen7{
+	background: url(../images/bg07.jpg);
+	background-size: 100% 100%;
+}
+.screen7 .bag1{
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	margin-left: -150px;
+	animation: circle 3s linear infinite;
+}
+.screen7 .bag2{
+	position: absolute;
+	top: 0px;
+	left: 0;
+	animation: play7 1s linear infinite;
+}
+.screen7 .bag3{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	animation: play8 1s linear infinite;
+}
+.screen7 .bag4{
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	animation: play9 1s linear infinite;
+}
+.screen7 .bag5{
+	position: absolute;
+	top: 0px;
+	right: 0;
+	animation: play10 1s linear infinite;
+}
+.screen7 .bag6{
+	position: absolute;
+	top: 160px;
+	left: 50%;
+	margin-left: -150px;
+	animation: circle 3s linear infinite;
+}
+@keyframes play7{
+	0%{
+		transform: translate(0,0)
+	}
+	100%{
+		transform: translate(780px,250px)
+	}
+}
+@keyframes play8{
+	0%{
+		transform: translate(0,0)
+	}
+	100%{
+		transform: translate(780px,-450px)
+	}
+}
+@keyframes play9{
+	0%{
+		transform: translate(0,0)
+	}
+	100%{
+		transform: translate(-780px,-450px)
+	}
+}
+@keyframes play10{
+	0%{
+		transform: translate(0,0)
+	}
+	100%{
+		transform: translate(-780px,250px)
+	}
+}

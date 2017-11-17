@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#nav ul li:nth-of-type(2) a{
+	color:red;
+	border-bottom:1px solid red;
+}
+#login{	
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 150px;
+	overflow: hidden;
+}
+#login .left{
+	width: 200px;
+	height: 210px;
+	margin:20px 15px;
+	float: left;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+}
+#login .left h3{
+	width: 170px;
+	height: 30px;
+	background: dodgerblue;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	margin: 80px 15px 30px;
+	box-shadow: 2px 6px 15px 2px rgba(50,133,250,0.6);
+}
+#login .left h3 a{
+	display: block;
+	color: #fff;
+}
+#login .left p{
+	width: 200px;
+	text-align: center;
+	color: #CCC;
+}
+#login .left p span{
+	color: orangered;
+}
+#login .right{
+	overflow: hidden;
+	margin: 20px 10px;
+	position: relative;
+	width: 747px;
+}
+#login .right ul{
+	position: relative;
+	width: 2988px;
+}
+#login .right ul li{
+	float: left;
+}
+#login .right ul li:nth-of-type(1){
+}
+#login .right span{
+	width: 40px;
+	height: 70px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	cursor: pointer;
+}
+#login .right span:nth-of-type(1){
+	background: url(../images/sprite.png) no-repeat -235px -1866px;
+	left: 50px;	
+}
+#login .right span:nth-of-type(2){
+	background: url(../images/sprite.png) no-repeat -235px -1933px;
+	right: 50px;
+}
+#tab .tab1{
+	width: 1000px;
+	height: 400px;
+	margin: 20px auto;
+	overflow: hidden;
+	background: url(../images/new.png) no-repeat;
+	box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+	
+}
+#tab .tab1 .s1{
+	float: right;
+	margin: 10px 10px;
+}
+#tab .tab1 .s1 a{
+	color: #666;
+}
+#tab .tab1 .left{
+	float: left;
+	width: 400px;
+	height: 300px;
+	margin-top: 70px;
+}
+#tab .tab1 .left .i1{
+	
+}
+#tab .tab1 .left h3{
+	margin-left: 120px;
+	margin-top: -35px;
+}
+#tab .tab1 .left img{
+	margin-left: 60px;
+	margin-top: 25px;
+}
+#tab .tab1 .right{
+	float: left;
+	width: 580px;
+	height: 300px;
+	margin-top:50px ;
+	border-left: 1px solid #666;
+	margin: 20px auto;
+	overflow: hidden;
+}
+#tab .tab1 .right .one{
+	float: left;
+	position: relative;
+	margin-left: 100px;
+	margin-top: 40px;
+}
+#tab .tab1 .right .two{
+	float: left;
+	position: relative;
+	margin-top: 40px;
+}
+#tab .tab1 .right .pic{
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+#tab .tab1 .right p{
+	font-size: 28px;
+	position: absolute;
+	top: 175px;
+	left: 20px;
+}
+#tab .tab1 .right p span{
+	font-size: 16px;
+}

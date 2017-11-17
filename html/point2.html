@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="../css/share.css" />
+		<link rel="stylesheet" type="text/css" href="../css/point2.css" />
+		<script src="../js/jquery-1.11.1.js"></script>
+			<script>
+				$(function(){
+					var i=0
+					var timer;
+					function aa(){
+						clearInterval(timer);
+						timer=setInterval(function(){
+							i++;
+						if(i>3){
+							i=0
+						}
+						$('#login .right span:nth-of-type(1)').siblings('ul').css('left',i*747+'px')
+						$('#login .right span:nth-of-type(2)').siblings('ul').css('left',-i*747+'px')
+						},2000)}
+						aa()
+					$('#login').hover(function(){
+						clearInterval(timer);
+					},function(){
+						aa()
+					})
+					$('span').click(function(){
+						i++;
+						if(i>3){
+							i=0
+						}
+						$('#login .right span:nth-of-type(1)').siblings('ul').css('left',i*747+'px')
+						$('#login .right span:nth-of-type(2)').siblings('ul').css('left',-i*747+'px')
+					})
+					
+				})
+			</script>
+		<title></title>
+	</head>
+
+	<body>
+		<div id="nav">
+			<ul>
+				<li></li>
+    			<li><a href="point2.html">兑换特权</a></li>
+    			<li><a href="point3.html">我的积分</a></li>
+    			<li><a href="point1.html">积分规则</a></li>
+			</ul>
+		</div>
+		<div id="login">
+			<div class="left">
+				<h3><a href="">登录签到</a></h3>
+				<p>赚积分换特权</p>
+				<p>连续签到<span>3</span>天还能抽大奖！</p>
+			</div>
+			<div class="right">
+				<ul>
+					<li><img src="../images/banner01.png"/></li>
+					<li><img src="../images/banner02.png"/></li>
+					<li><img src="../images/banner03.jpg" alt="" /></li>
+					<li><img src="../images/banner04.jpg" alt="" /></li>
+				</ul>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div id="tab">
+
+			<div class="tab1">
+				<span class="s1"><a href="">了解更多</a></span>
+				<div class="left">
+					<img src="../images/pptv.png"/ class="i1">
+					<h3>PPTV聚力会员激活码</h3>
+					<img src="../images/pptv_bg.png" />
+				</div>
+				<div class="right">
+					<div class="one">
+						<img src="../images/prize.png" />
+						<div class="pic">
+							<img src="../images/pptv7.png" />
+						</div>
+						<p>600<span>积分</span></p>
+
+					</div>
+					<div class="two">
+						<img src="../images/prize.png" />
+						<div class="pic">
+							<img src="../images/bdyone.png" />
+						</div>
+						<p>1500<span>积分</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="tab1">
+				<span class="s1"><a href="">了解更多</a></span>
+				<div class="left">
+					<img src="../images/iqy.png"/ class="i1">
+					<h3>爱奇艺VIP激活码</h3>
+					<img src="../images/iqy_bg.png" />
+				</div>
+				<div class="right">
+					<div class="one">
+						<img src="../images/prize.png" />
+						<div class="pic">
+							<img src="../images/iqyday.png" />
+						</div>
+						<p>100<span>积分</span></p>
+
+					</div>
+					<div class="two">
+						<img src="../images/prize.png" />
+						<div class="pic">
+							<img src="../images/iqymonth.png" />
+						</div>
+						<p>10000<span>积分</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="tab1">
+				<span class="s1"><a href="">了解更多</a></span>
+				<div class="left">
+					<img src="../images/bdc.png" />
+					<h3>百度云会员激活码</h3>
+					<img src="../images/bdy_bg.png"/>
+				</div>
+				<div class="right">
+					<div class="one">
+						<img src="../images/prize.png" />
+						<div class="pic">
+							<img src="../images/bdyone.png" />
+						</div>
+						<p>4000<span>积分</span></p>
+
+					</div>
+				</div>
+			</div>
+			<div class="tab1">
+				<span class="s1"><a href="">了解更多</a></span>
+				<div class="left">
+					<img src="../images/txt.png"/ class="i1">
+					<h3>百度文库VIP激活码</h3>
+					<img src="../images/txt_bg.png" />
+				</div>
+				<div class="right">
+					<div class="one">
+						<img src="../images/prize.png" />
+						<div class="pic">
+							<img src="../images/txt_day.png" />
+						</div>
+						<p>800<span>积分</span></p>
+
+					</div>
+					<div class="two">
+						<img src="../images/prize.png" />
+						<div class="pic">
+							<img src="../images/txt_month.png" />
+						</div>
+						<p>4000<span>积分</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

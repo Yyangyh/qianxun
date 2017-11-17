@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+			<link rel="stylesheet" type="text/css" href="../css/share.css"/>
+			<link rel="stylesheet" type="text/css" href="../css/point3.css"/>
+			<script src="../js/jquery-1.11.1.js"></script>
+			<script>
+				$(function(){
+					var i=0
+					var timer;
+					function aa(){
+						clearInterval(timer);
+						timer=setInterval(function(){
+							i++;
+						if(i>3){
+							i=0
+						}
+						$('#login .right span:nth-of-type(1)').siblings('ul').css('left',i*747+'px')
+						$('#login .right span:nth-of-type(2)').siblings('ul').css('left',-i*747+'px')
+						},2000)}
+						aa()
+					$('#login').hover(function(){
+						clearInterval(timer);
+					},function(){
+						aa()
+					})
+					$('span').click(function(){
+						i++;
+						if(i>3){
+							i=0
+						}
+						$('#login .right span:nth-of-type(1)').siblings('ul').css('left',i*747+'px')
+						$('#login .right span:nth-of-type(2)').siblings('ul').css('left',-i*747+'px')
+					})
+					
+				})
+			</script>
+		<title></title>
+	</head>
+	<body>
+		<div id="nav">
+			<ul>
+				<li></li>
+    			<li><a href="point2.html">兑换特权</a></li>
+    			<li><a href="point3.html">我的积分</a></li>
+    			<li><a href="point1.html">积分规则</a></li>
+			</ul>
+		</div>
+		<div id="login">
+			<div class="left">
+				<h3><a href="">签到抽奖</a></h3>
+				<p>已连续签到<span>0</span>天</p>
+			</div>
+			<div class="right">
+				<ul>
+					<li><img src="../images/banner01.png"/></li>
+					<li><img src="../images/banner02.png"/></li>
+					<li><img src="../images/banner03.jpg" alt="" /></li>
+					<li><img src="../images/banner04.jpg" alt="" /></li>
+				</ul>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div id="user">
+			<div class="top">
+				<p>昨日获得积分：<span>14</span></p>
+			</div>
+			<div class="center">
+				<ul>
+					<li><span>0</span>分<a href=""></a></li>
+					<li><span>0</span>分<a href=""></a></li>
+					<li><span>0</span>分<a href=""></a></li>
+				</ul>
+				<ol>
+					<li>5分/小时<br />昨日登录增长</li>
+					<li>5分/小时<br />昨日登录增长</li>
+					<li>5分/小时<br />昨日登录增长</li>
+				</ol>
+			</div>
+		</div>
+		<div id="view">
+			<div class="top">
+				<p>近10天获得积分详情：<a href=""><span>在线</span></a><a href=""><span>搜索</span></a><a href=""><span>网页访问</span></a></p>
+			</div>
+			<div class="bottom">
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+				<ol>
+					<li>11月14日</li>
+					<li>15日</li>
+					<li>16日</li>
+					<li>17日</li>
+					<li>18日</li>
+					<li>19日</li>
+					<li>20日</li>
+					<li>21日</li>
+					<li>22日</li>
+					<li>23日</li>
+				</ol>
+			</div>
+		</div>
+	</body>
+</html>
